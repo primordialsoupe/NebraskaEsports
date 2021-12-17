@@ -1,0 +1,254 @@
+﻿body {
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+#header {
+    flex-shrink: 0;
+    background-color:black;
+}
+
+#main {
+    flex: 1 0 auto;
+    padding: 0;
+    background-color:#bcbcbc;
+}
+
+#mainAbout {
+    flex: 1 0 auto;
+    padding: 0;
+    background-color: #696969;
+}
+
+#footer {
+    flex-shrink: 0;
+    background-color:black;
+}
+
+.header-logo {
+    display:grid;
+    grid-template-columns:auto;
+    flex-flow:row wrap;
+    justify-content:space-evenly;
+    margin:auto;
+}
+
+    .header-logo img {
+        display:block;
+        margin-left:auto;
+        margin-right:auto;
+    }
+
+    .header-logo a {
+        font-family:"Agency FB";
+        color:white;
+        text-decoration:none;
+        list-style-type:none;
+        font-size:2.6em;
+    }
+
+        .header-logo a:hover {
+            color: #be0404;
+            transition: color linear .5s;
+        }
+
+.header-content {
+    display:grid;
+    grid-template-columns:auto;
+    text-align:center;
+}
+
+    .header-content a {
+        text-decoration:none;
+    }
+
+    .header-content nav ul {
+        padding: 0;
+        list-style-type:none;
+    }
+
+        .header-content nav ul li {
+            list-style-type:none;
+            display:inline-block;
+            text-decoration:none;
+        }
+
+            .header-content nav ul li a {
+                padding: 16px 24px;
+                font-size: 2.2em;
+                font-family:'Agency FB';
+                text-decoration: none;
+                color:white;
+            }
+
+                .header-content nav ul li a:hover {
+                    color:#be0404;
+                    transition: color linear .25s;
+                }
+
+            .header-content nav ul li btn {
+                padding: 16px 24px;
+                font-size: 2.2em;
+                font-family: 'Agency FB';
+                text-decoration: none;
+                color: white;
+            }
+
+                .header-content nav ul li btn:hover {
+                    color: #be0404;
+                    transition: color linear .25s;
+                }
+
+.main-content {
+    display:grid;
+    grid-template-columns:50% 50%;
+    grid-template-rows:auto auto auto auto;
+    grid-row-gap:80px;
+    justify-content:space-evenly;
+    text-align:center;
+    align-items:center;
+    margin-left:auto;
+    margin-right:auto;
+    padding-top:30px;
+    padding-bottom:30px;
+    font-family:'Agency FB';
+    font-size:2em;
+}
+
+    .main-content .ValLogo {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start:1;
+        grid-row-end:2;
+
+    }
+
+    .main-content .ValDesc {
+        grid-column-start:2;
+        grid-column-end:3;
+        grid-row-start:1;
+        grid-row-end:2;
+    }
+
+        .main-content .ValDesc th {
+            padding-left: 60px;
+            padding-right: 60px;
+            font-size:1.2em;
+        }
+
+    .main-content .RocketLogo {
+        grid-column-start:2;
+        grid-column-end:3;
+        grid-row-start:2;
+        grid-row-end:3;
+        
+    }
+
+    .main-content .RocketDesc {
+        grid-column-start:1;
+        grid-column-end:2;
+        grid-row-start:2;
+        grid-row-end:3;
+    }
+
+        .main-content .RocketDesc th {
+            padding-left: 60px;
+            padding-right: 60px;
+            font-size: 1.2em;
+        }
+
+    .main-content .CSLogo {
+        grid-column-start:1;
+        grid-column-end:2;
+        grid-row-start:3;
+        grid-row-end:4;
+    }
+
+    .main-content .CSDesc {
+        grid-column-start:2;
+        grid-column-end:3;
+        grid-row-start:3;
+        grid-row-end:4;
+    }
+
+        .main-content .CSDesc th {
+            padding-left: 60px;
+            padding-right: 60px;
+            font-size: 1.2em;
+        }
+
+    .main-content .LeagueLogo {
+        grid-column-start:2;
+        grid-column-end:3;
+        grid-row-start:4;
+        grid-row-end:5;
+    }
+
+    .main-content .LeagueDesc {
+        grid-column-start:1;
+        grid-column-end:2;
+        grid-row-start:4;
+        grid-row-end:5;
+        padding-left:60px;
+    }
+
+        .main-content .LeagueDesc th {
+            padding-left: 60px;
+            padding-right: 60px;
+            font-size: 1.2em;
+        }
+
+.main-contact {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto auto auto auto;
+    grid-row-gap: 80px;
+    justify-content: space-evenly;
+    text-align: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    font-family: 'Agency FB';
+    font-size: 2em;
+}
+
+    .main-contact .DiscordLogo {
+        will-change: transform;
+        transition: transform 150ms;
+    }
+
+        .main-contact .DiscordLogo:hover {
+            transform:scale(1.25);
+            transition:transform linear 250ms;
+        }
+
+.footer-logo {
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+    .footer-logo .UNLEsp {
+        grid-column:1/2;
+        justify-content:left;
+        margin-right:auto;
+    }
+
+    .footer-logo .UNL {
+        grid-column:2/2;
+        justify-content:right;
+        margin-left:auto;
+    }
